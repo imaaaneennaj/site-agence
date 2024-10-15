@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="styl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <section id="services" class="services-sec">
+        <svg width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#e8d716" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 100 100 V 10 L 0 100"></path>
+            <path d="M 30 73 L 100 18 V 10 Z" fill="#e8d716" stroke-width="0"></path>
+        </svg>
+        <div class="container swiper" style="border:2px solid black">
+            <div class="row ">
+                <div style="border: 2px green solid;">
+                    <div class="details-ser">
+                        <h1>we are</h1>
+                        <h1>
+                            <span>degital</span>agency
+                        </h1>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis! A dicta molestias aspernatur esse inventore distinctio aut, dolore et
+                             non deserunt recusandae incidunt voluptatem debitis alias pariatur obcaecati,lorem30</p>
+                        <a href="">learn more</a>
+                    </div>
+                </div>
+                <div class="row-ser slider-wrapper" style="border: 2px green solid;">
+                    <div style=" height:100%" class="swiper-wrapper">
+                      <div class='dis swiper-slide'> 
+                      <div >
+                        <h4>jjnnzb</h4>
+                        <a href='#'><i class='lni lni-checkmark'></i></a>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, in?</p>
+                      </div>
+                      </div>
+                      <div class='dis swiper-slide'> 
+                        <div >
+                          <h4>jjnnzb</h4>
+                          <a href='#'><i class='lni lni-checkmark'></i></a>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, in?</p>
+                        </div>
+                        </div>
+                        <div class='dis swiper-slide'> 
+                            <div >
+                              <h4>jjnnzb</h4>
+                              <a href='#'><i class='lni lni-checkmark'></i></a>
+                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, in?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                       <div class="swiper-button-prev  " id="circle-left"></div>
+                       <div class="swiper-button-next " id="circle-right"></div>
+                       
+                </div>
+            
+            </div>
+        </div>
+        <svg width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 100 100 V 10 L 0 100"></path>
+            <path d="M 30 73 L 100 18 V 10 Z" fill="#ffffff" stroke-width="0"></path>
+        </svg>
+        <img src="images/pot.png"   style="visibility: visible;">
+     </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+   const swiper = new Swiper('.slider-wrapper', {
+loop: true,
+grabCursor:true,
+spaceBetween:30,
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable:true,
+dynamicBullets:true
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+breakpoints:{
+0:{
+  slidesPerView:1
+},
+620:{
+  slidesPerView:2
+},
+1024:{
+  slidesPerView:2
+},
+}
+});
+    </script>
+</body>
+</html>
+

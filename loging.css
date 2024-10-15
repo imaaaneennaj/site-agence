@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 11111;
+  display: block;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #2b2b2b;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+  text-align: left;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    transform: translate3d(0, 0, 0);
+    border: red 3px solid;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #202020;
+    width: 100%;
+    z-index: 1114;
+    height: 100%;
+    opacity: 1;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    overflow: hidden;
+}
+.menuu{
+    border: green 4px solid;
+    padding: 5.5rem 5rem;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    overflow-y: auto;
+    box-align: center;
+    width: 100%;
+    position: relative;
+}
+.menuu span{
+    border: 2px solid yellow;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+span i{
+    font-family: "LineIcons";
+    color: white;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.menuu a{
+    border: 2px solid yellow;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    white-space: nowrap;
+    font-size: 1.25rem;
+    transition: ease-in-out .2s;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.menuu a img{
+    width: 30%;
+    margin: auto;
+    display: block;
+    transition: ease-in-out 0.2s;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.menuu nav{
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.menuu nav ul{
+    display: block;
+    border: 1px solid purple;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+.menuu nav ul li{
+    transform: translateY(0);
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 0;
+    opacity: 1;
+    transition: all .8s ease ;
+    position: relative;
+    box-sizing: border-box;
+}
+.menuu nav ul li:first-child{
+    transition-delay: .1s;
+    box-sizing: border-box;
+    
+}
+.menuu nav ul li a{
+    border: blue solid 1px;
+    display: inline-table;
+    padding: 2px 0 3px 0;
+    color: white;
+    font-size: 1,5rem;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 0;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.menuu div{
+    position: relative;
+    top:60px;
+    height: 45px;
+    border: 2px solid yellow;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.menuu div ul{
+    border: 1px solid purple;
+    margin-bottom: 0;
+    margin-left: -10px;
+    padding: 0;
+    list-style-position: inside;
+    margin-top: 0;
+    margin-right: 0;
+    display: block;
+    box-sizing: border-box;
+}
+.menuu div ul li{
+    display: inline-block;
+    margin-right: 10px;
+} 
+.menuu div ul li:last-child{
+    margin-right: 0px;
+}
+.menuu div ul li a{
+    top: -65px;
+    display: block;
+    color: white;
+    font-size: 16px;
+    height: 36px;
+    line-height: 38px;
+    border: 1px solid transparent;
+    text-align: center;
+    width: 36px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    transition: background-color .5s ease;
+    
+}
+.menuu div ul li a i{
+    -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.p2{
+    width: 100%;
+    border: solid 4px green;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    z-index: 1;
+    transform: rotateY(-180deg);
+}
